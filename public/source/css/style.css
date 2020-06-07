@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 16px;
+  font-family: Tahoma, Arial, Helvetica, serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.header .home_page .nav {
+  display: flex;
+  margin-left: auto;
+  list-style: none;
+  width: auto;
+  float: right;
+  background-repeat: repeat-x;
+  overflow: hidden;
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 10px 10px;
+}
+.header .home_page .nav li {
+  padding: 7px 10px;
+}
+.header .home_page .nav .bg-item {
+  background: #1F79DD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .home_page .nav .bg-item i {
+  color: #ffffff;
+}
+
+@-webkit-keyframes chuChay {
+  from {
+    opacity: 0;
+    margin-left: -500px;
+  }
+  to {
+    opacity: 1;
+    margin-right: -200px;
+  }
+}
+.footer__menu--title {
+  position: relative;
+}
+.footer__menu--title:after {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #ccc;
+  bottom: 0;
+  left: 11px;
+}
+
+.footer__nav--line {
+  list-style: none;
+}
+.footer__nav--line:before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 29px;
+  width: 2px;
+  height: 66px;
+  background: #ccc;
+}
+
+.line__li {
+  position: relative;
+}
+.line__li:after {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background: #ccc;
+  top: 6px;
+  left: -14px;
+  content: "";
+}
+.line__li:before {
+  position: absolute;
+  top: 8px;
+  left: -34px;
+  width: 20px;
+  height: 2px;
+  background: #ccc;
+  content: "";
+}
+
+.footer__address {
+  -webkit-box-shadow: 0px 24px 20px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 24px 20px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 24px 20px -7px rgba(0, 0, 0, 0.75);
+  border: 1px solid #ccc;
+  background: #ccc;
+  max-width: 250px;
+  overflow: hidden;
+  padding: 12px;
+  height: max-content;
+}
+.footer__address > p {
+  margin: 0;
+}
+
+.header .menu_header {
+  z-index: 5;
+}
+
+.marquee {
+  font-size: 14.5px;
+}
+
+.menu_header ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu_header {
+  position: relative;
+  font-size: 14.5px;
+}
+.menu_header .chrome_menu {
+  display: flex;
+  justify-content: space-around;
+}
+.menu_header .chrome_menu .mega-menu {
+  padding: 5px 10px;
+  border-radius: 5px 5px 0px 0px;
+}
+.menu_header .chrome_menu .mega-menu .sub_menu {
+  display: flex;
+  justify-content: space-around;
+  background: #1F79DD;
+  z-index: 999999;
+  padding-bottom: 0.5rem;
+  border-radius: 5px 5px 0px 0px;
+}
+.menu_header .chrome_menu .mega-menu:hover {
+  background: #1F79DD;
+}
+.menu_header .chrome_menu .mega-menu:hover > ul li a {
+  color: white;
+}
+
+.menu_header ul li a {
+  text-decoration: none;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  color: black;
+}
+
+.menu_header .sub_menu {
+  padding: 10px 10px 0 10px;
+  display: flex;
+  left: 10px;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.nav_menu ul li {
+  margin-bottom: 15px;
+  padding: 0;
+  width: max-content;
+}
+
+.mega-menu:hover .sub_menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+ul {
+  margin-bottom: 0.5rem;
+}
+
+.menu_header {
+  border: 3px solid #F9F9F9;
+  padding: 5px;
+  border-radius: 30px 30px;
+}
+
+table, th, td {
+  border-collapse: collapse;
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+}
+
+.table-group {
+  width: 100%;
+}
+
+.mega-menu .sub_menu {
+  width: 80vw;
+  display: flex;
+}
+.mega-menu .sub_menu a {
+  font-size: 13px;
+}
+
+.footer-branch {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-branch ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-branch .footer__left {
+  background-color: #f7f7f7;
+  line-height: 16px;
+  font-family: Tahoma, Arial, Helvetica;
+  font-size: 11px;
+  font-weight: normal;
+  border: solid 1px #dbdbdb;
+  box-sizing: border-box;
+  padding: 7px 10px 0 10px;
+  width: 240px;
+  height: max-content;
+  max-width: 200px;
+  box-shadow: 0 0.2px black;
+}
+.footer-branch .footer__left .cus_footer_cop_bot {
+  width: 100%;
+  background-image: url("/source/image/pg_footer.png");
+  background-repeat: no-repeat;
+  background-position: bottom -5px center;
+  background-size: cover;
+  height: 13px;
+  box-shadow: 0 0 black;
+}
+.footer-branch .footer_right {
+  box-sizing: border-box;
+  width: 70%;
+}
+
+/*# sourceMappingURL=style.css.map */
